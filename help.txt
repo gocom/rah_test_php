@@ -1,0 +1,25 @@
+h1. rah_test_php
+
+p. Rah_test_php-plugin allows you to run and test lines of PHP code, in a test interface, via Textpattern backend, nothing more or less. Just simple textarea and button, error reporting and returned value outputting.
+
+* Version: 0.1
+* Updated: 2008/07/27 15:00 GMT+2
+
+h3. Table of Contents
+
+* "List of features":#list-of-features
+* "Requirements":#requirements
+* "Installation and usage":#installation-and-usage
+
+h3(#list-of-features). List of features
+
+* Allows you to test PHP scripts directly from Textpattern backend.
+* Simple and clean panel.
+
+h3(#requirements). Requirements
+
+* Textpattern 4.x.x
+
+h3(#installation-and-usage). Installation and usage
+
+p. The general behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup. Activate the plugin, and the new rah_test_php-tab is created under "Extensions".
