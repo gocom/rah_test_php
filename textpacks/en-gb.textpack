@@ -1,0 +1,6 @@
+#@admin
+#Default language, en-us, en-gb
+rah_test_php => Execute PHP
+rah_test_php_code => PHP code
+rah_test_php_run => Run the PHP
+rah_test_php_returned => Returned

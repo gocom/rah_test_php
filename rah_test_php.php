@@ -14,12 +14,12 @@
  */
 
 	if(@txpinterface == 'admin') {
-		add_privs('rah_test_php','1,2');
-		add_privs('plugin_prefs.rah_test_php','1,2');
-		register_callback('rah_test_php_prefs','plugin_prefs.rah_test_php');
-		register_tab('extensions','rah_test_php',gTxt('rah_test_php') == 'rah_test_php' ? 'Execute PHP' : gTxt('rah_test_php'));
-		register_callback('rah_test_php','rah_test_php');
-		register_callback('rah_test_php_head','admin_side','head_end');
+		add_privs('rah_test_php', '1,2');
+		add_privs('plugin_prefs.rah_test_php', '1,2');
+		register_callback('rah_test_php_prefs', 'plugin_prefs.rah_test_php');
+		register_tab('extensions', 'rah_test_php', gTxt('rah_test_php'));
+		register_callback('rah_test_php', 'rah_test_php');
+		register_callback('rah_test_php_head', 'admin_side', 'head_end');
 	}
 
 /**
@@ -28,25 +28,9 @@
 
 	function rah_test_php() {
 		
+		global $event;
+		
 		require_privs('rah_test_php');
-		
-		global $event, $textarray;
-
-		/*
-			Make sure language strings are set
-		*/
-		
-		foreach(
-			array(
-				'rah_test_php' => 'Execute PHP',
-				'rah_test_php_code' => 'PHP code',
-				'rah_test_php_run' => 'Run the PHP',
-				'rah_test_php_returned' => 'Returned'
-			) as $string => $translation
-		)
-			if(!isset($textarray[$string]))
-				$textarray[$string] = $translation;
-		
 		pagetop(gTxt('rah_test_php'));
 		
 		echo
