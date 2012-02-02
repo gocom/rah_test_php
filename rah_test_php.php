@@ -1,14 +1,17 @@
-<?php	##################
-	#	Rah_test_php-plugin for Textpattern
-	#	version 0.2
-	#	by Jukka Svahn
-	#	http://rahforum.biz
-	#
-	#	Copyright (C) 2011 Jukka Svahn <http://rahforum.biz>
-	#	Licensed under GNU Genral Public License version 2
-	#	http://www.gnu.org/licenses/gpl-2.0.html
-	#
-	##################
+<?php
+
+/**
+ * Rah_test_php plugin for Textpattern CMS
+ *
+ * @author Jukka Svahn
+ * @date 2008-
+ * @license GNU GPLv2
+ * @link http://rahforum.biz/plugins/rah_test_php
+ *
+ * Copyright (C) 2012 Jukka Svahn <http://rahforum.biz>
+ * Licensed under GNU Genral Public License version 2
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
 
 	if(@txpinterface == 'admin') {
 		add_privs('rah_test_php','1,2');
@@ -20,8 +23,8 @@
 	}
 
 /**
-	The pain and main function
-*/
+ * The pain and main function
+ */
 
 	function rah_test_php() {
 		
@@ -76,8 +79,8 @@
 	}
 
 /**
-	Adds styles and JavaScript to the <head>
-*/
+ * Adds styles and JavaScript to the <head>
+ */
 
 	function rah_test_php_head() {
 		
@@ -117,8 +120,8 @@ EOF;
 	}
 
 /**
-	Redirect to the prefs pane
-*/
+ * Redirect to the plugin panel
+ */
 
 	function rah_test_php_prefs() {
 		header('Location: ?event=rah_test_php');
