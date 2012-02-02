@@ -1,9 +1,9 @@
 h1. rah_test_php
 
-p. Rah_test_php-plugin allows you to run and test lines of PHP code, in a test interface, via Textpattern backend, nothing more or less. Just simple textarea and button, error reporting and returned value outputting.
+p. Rah_test_php allows site authors to execute PHP code via admin-side interface. Just simple field to put your code in, button to run the code. Reports resulting values and error messages if any.
 
-* Version: 0.1
-* Updated: 2008/07/27 15:00 GMT+2
+* Version: 0.2
+* Updated: 2011/06/05 6:40 PM UTC
 
 h3. Table of Contents
 
@@ -13,13 +13,28 @@ h3. Table of Contents
 
 h3(#list-of-features). List of features
 
-* Allows you to test PHP scripts directly from Textpattern backend.
-* Simple and clean panel.
+* Allows you to run PHP scripts directly from Textpattern's backend.
+* Simple and clean admin-side interface.
 
 h3(#requirements). Requirements
 
-* Textpattern 4.x.x
+* Textpattern 4.0.7 or newer.
 
 h3(#installation-and-usage). Installation and usage
 
-p. The general behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup. Activate the plugin, and the new rah_test_php-tab is created under "Extensions".
+p. The general behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup. Activate the plugin, and the new rah_test_php's _Execute PHP_ tab is created under _Extensions_.
+
+h3(#changelog). Changelog
+
+p. *Version 0.2*
+
+* Added: confirmation dialog before executing the provided script.
+* Added: language string support. Now TextPacks can be used to translate the admin-side interface.
+* Added: options link to the admin-side interface.
+* Added: Markup changes, added rah_ui class selectors to the elements for easier theming.
+* Changed: no longer uses TXP's @php()@ function nor includes @publish.php@.
+* Now requires Textpattern version 4.0.7 or newer.
+
+p. *Version 0.1*
+
+* Initial release.
