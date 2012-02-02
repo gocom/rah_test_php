@@ -35,7 +35,8 @@
 		
 		echo
 			'<form method="post" action="index.php" id="rah_test_php_container" class="rah_ui_container">'.n.
-			'	<input type="hidden" name="event" value="'.$event.'" />'.n.
+			eInput($event).n.
+			tInput().n.
 			'	<p>'.n.
 			'		<label>'.n.
 			'			'.gTxt('rah_test_php_code').'<br />'.n.
@@ -46,7 +47,7 @@
 			'		<input type="submit" value="'.gTxt('rah_test_php_run').'" class="publish" />'.n.
 			'	</p>'.n;
 
-		if(ps('php')) {
+		if(ps('php') && ps('_txp_token') == form_token()) {
 			
 			ob_start();
 			eval(ps('php'));

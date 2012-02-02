@@ -9,13 +9,17 @@ h2. List of features
 
 h2. Requirements
 
-* Textpattern v4.0.7 or newer.
+* Textpattern v4.4.1 or newer.
 
 h2. Installation and usage
 
 p. The general behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup. Activate the plugin, and the new rah_test_php's _Execute PHP_ tab is created under _Extensions_.
 
 h2. Changelog
+
+h3. Version 0.3 - upcoming
+
+* CSRF protection.
 
 h3. Version 0.2 - 2011/06/05
 
